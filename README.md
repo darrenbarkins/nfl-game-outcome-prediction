@@ -4,7 +4,7 @@ A binary classification project predicting whether the home team will win an NFL
 
 ## Project Overview
 
-This project uses NFL game data from 2002 through 2023 to predict home team win/loss outcomes. Two versions of each model were built — one using only historical performance features, and one that also includes Vegas betting lines — allowing for a direct comparison of what public data alone can predict versus what the betting market has already priced in.
+This project uses NFL game data from 2002 through 2023 to predict home team win/loss outcomes. Two versions of each model were built, one using only historical performance features, and one that also includes Vegas betting lines, allowing for a direct comparison of what public data alone can predict versus what the betting market has already priced in.
 
 **Primary benchmark:** Vegas spread direction accuracy (~66.3%)
 
@@ -69,7 +69,7 @@ nfl-game-outcome-prediction/
 
 ## Key Findings
 
-- Vegas betting lines are the dominant predictive signal — every model improved by ~6 percentage points when spread and total were added
+- Vegas betting lines are the dominant predictive signal, every model improved by ~6 percentage points when spread and total were added
 - Logistic Regression outperforms all more complex models, suggesting the feature-outcome relationship is largely linear
 - The soft voting ensemble achieves the best log loss (0.6184) but does not outperform Logistic Regression on accuracy or AUC
 - The best model falls just 0.47 percentage points short of the Vegas benchmark
